@@ -6,7 +6,7 @@ function App() {
 
     // useEffect runs automatically when the component loads
     useEffect(() => {
-        fetch('https://localhost:7144/apiVerification/all')
+        fetch('https://localhost:7144/api/Verification/all')
             .then(response => {
                 if (!response.ok) throw new Error("Network response Was Not Ok");
                 return response.json(); // Tell React to read the response as JSON data
